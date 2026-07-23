@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur da Hora de Sal | Portfólio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <i class="fas fa-laptop-code"></i>
+        <h2>Arthur Sal</h2>
+    </div>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#competencias">Competências</a>
+        <a href="#formacao">Formação</a>
+        <a href="#portfolio">Projetos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+</header>
+
+<main>
+
+<section id="inicio" class="hero">
+
+    <div class="hero-texto">
+        <h1>Arthur da Hora de Sal</h1>
+        <h2>Desenvolvedor em Formação</h2>
+        <button id="btnProjetos" class="card">Ver Projetos</button>
+    </div>
+
+</section>
+
+<section id="sobre">
+
+    <h2>Sobre Mim</h2>
+
+    <p>
+        Estudante de Tecnologias e Programação de Sistemas de Informação.<br>
+        Dedicado ao desenvolvimento de competências em programação,<br>
+        com foco na aprendizagem contínua e na criação de soluções tecnológicas.
+    </p>
+
+</section>
+
+<section id="competencias">
+
+    <h2>Competências Técnicas</h2>
+
+<div class="skills">
+
+    <span><i class="fab fa-html5"></i> HTML</span>
+
+    <span><i class="fab fa-css3-alt"></i> CSS</span>
+
+    <span><i class="fab fa-js"></i> JavaScript</span>
+
+    <span><i class="fab fa-python"></i> Python</span>
+
+    <span><i class="fab fa-java"></i> Java</span>
+
+    <span><i class="fab fa-git-alt"></i> Git</span>
+
+</div>
+
+</section>
+
+<section id="formacao">
+
+    <h2>Habilitações Académicas</h2>
+
+    <article class="formacao-card">
+        <h3>Ensino Secundário</h3>
+        <p>12.º Ano</p>
+        <span>Concluído</span>
+    </article>
+
+    <article class="formacao-card">
+        <h3>Técnico Especialista em Tecnologias e Programação de Sistemas de Informação</h3>
+        <p>IEFP – Centro de Emprego e Formação Profissional do Porto</p>
+        <span>2025 – Em curso</span>
+    </article>
+
+</section>
+
+<section id="idiomas">
+
+    <h2>Idiomas</h2>
+
+    <div class="cards cards-idiomas">
+
+        <div class="card">
+            <h3>Português</h3>
+            <p>Nativo</p>
+        </div>
+
+        <div class="card">
+            <h3>Inglês</h3>
+            <p>Intermédio</p>
+        </div>
+
+        <div class="card">
+            <h3>Espanhol</h3>
+            <p>Intermédio</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="portfolio">
+
+    <h2>Projetos</h2>
+
+    <div id="listaProjetos" class="cards"></div>
+
+</section>
+
+<section id="contacto">
+
+    <h2>Contacto</h2>
+
+<form id="formContacto"
+      action="https://formsubmit.co/arthurrthr1988@gmail.com"
+      method="POST">
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="Nova mensagem do Portfólio">
+
+    <input type="text"
+           id="nome"
+           name="Nome"
+           placeholder="Nome"
+           required>
+
+    <input type="email"
+           id="email"
+           name="Email"
+           placeholder="Email"
+           required>
+
+    <textarea
+        id="mensagem"
+        name="Mensagem"
+        rows="5"
+        placeholder="Mensagem"
+        required></textarea>
+
+    <button type="submit">Enviar</button>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+
+    <p>© 2026 Arthur da Hora de Sal</p>
+
+    <div class="redes">
+
+        <a href="https://github.com/arthrtx" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href="mailto:arthurrthr1988@gmail.com">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+    </div>
+
+</footer>
+
+<button id="topo">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
