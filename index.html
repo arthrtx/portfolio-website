@@ -17,7 +17,7 @@
 
     <div class="logo">
         <i class="fas fa-laptop-code"></i>
-        <h2>Webbsite Portifolio</h2>
+        <h2>Website Portfolio</h2>
     </div>
 
     <nav>
@@ -38,13 +38,19 @@
         <h1>Hello, I'm Arthur Sal</h1>
         <div class="hero-card">
             <h2>Information Systems & Programming Student | Aspiring Developer</h2>
-            <button id="btnProjetos">View Projects</button>
+            <div class="hero-btns">
+                <button id="btnProjetos">View Projects</button>
+                <button id="btnContacto">Contact Me</button>
+                <a class="hero-btn" href="assets/Arthur-Sal-CV.pdf" target="_blank">Download CV</a>
+            </div>
         </div>
     </div>
 
 </section>
 
 <div class="about-skills">
+
+<div class="about-col">
 
 <section id="sobre">
 
@@ -56,9 +62,42 @@
 
 </section>
 
+<section id="resume">
+
+    <h2>Resume</h2>
+
+    <div class="resume-content">
+        <div class="resume-card">
+            <p>Download my CV to get a quick overview of my background, skills, and experience.</p>
+            <a class="repo-btn" href="assets/Arthur-Sal-CV.pdf" target="_blank">
+                <i class="fas fa-download"></i> Download CV
+            </a>
+        </div>
+
+        <div class="resume-card">
+            <p>Visit my GitHub to explore more projects and everything I've been working on.</p>
+            <a class="repo-btn" href="https://github.com/arthrtx" target="_blank">
+                <i class="fab fa-github"></i> github.com/arthrtx
+            </a>
+        </div>
+    </div>
+
+</section>
+
+</div>
+
 <section id="competencias">
     <h2>Technical Skills</h2>
-    <div class="skills"></div>
+
+    <div class="skills-group">
+        <h3>Languages</h3>
+        <div class="skills" id="skillsLanguages"></div>
+    </div>
+
+    <div class="skills-group">
+        <h3>Tools &amp; Others</h3>
+        <div class="skills" id="skillsTools"></div>
+    </div>
 </section>
 
 </div>
@@ -68,13 +107,32 @@
     <h2>Recent Projects</h2>
 
     <div class="project-content">
-        <div class="video-container">
-            <video autoplay muted loop playsinline>
-                <source src="assets/video/video.mp4" type="video/mp4">
-            </video>
+        <div class="video-col">
+            <div class="video-container">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/video/video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="project-languages">
+                <div class="lang-bar">
+                    <span style="width:48.2%;background:#e34c26"></span>
+                    <span style="width:32.5%;background:#563d7c"></span>
+                    <span style="width:19.3%;background:#f1e05a"></span>
+                </div>
+                <div class="lang-legend">
+                    <span><i style="background:#e34c26"></i>HTML 48.2%</span>
+                    <span><i style="background:#563d7c"></i>CSS 32.5%</span>
+                    <span><i style="background:#f1e05a"></i>JavaScript 19.3%</span>
+                </div>
+            </div>
         </div>
         <div class="project-info">
-            <h3>PinSpace Create</h3>
+            <div class="project-title-row">
+                <h3>PinSpace Create</h3>
+                <a class="repo-btn" href="https://github.com/arthrtx/PinSpace_Create" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
             <p>Create mood boards, vision boards, and collages — Canva + Pinterest style.</p>
             <p>A creative board editor for putting together ideas, saving visions, and sharing with the world. Choose a template, drag shapes and text, and publish your public board.</p>
         </div>
@@ -94,18 +152,40 @@
         <div class="marquee-scrollbar-thumb"></div>
     </div>
 
+    <div class="project-text">
+        <p><strong>Problem:</strong> Creating visual boards and idea collages usually requires complex tools.</p>
+        <p><strong>Solution:</strong> An intuitive Canva/Pinterest-style editor to create, save, and share mood boards and collages directly in the browser.</p>
+    </div>
+
 </section>
 
 <section id="portfolio-2">
 
     <div class="project-content">
-        <div class="video-container">
-            <video autoplay muted loop playsinline>
-                <source src="assets/video/ppv4.mp4" type="video/mp4">
-            </video>
+        <div class="video-col">
+            <div class="video-container">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/video/ppv4.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="project-languages">
+                <div class="lang-bar">
+                    <span style="width:99.9%;background:#3572A5"></span>
+                    <span style="width:0.1%;background:#c1f12e"></span>
+                </div>
+                <div class="lang-legend">
+                    <span><i style="background:#3572A5"></i>Python 99.9%</span>
+                    <span><i style="background:#c1f12e"></i>Batchfile 0.1%</span>
+                </div>
+            </div>
         </div>
         <div class="project-info">
-            <h3>FitControl</h3>
+            <div class="project-title-row">
+                <h3>FitControl</h3>
+                <a class="repo-btn" href="https://github.com/arthrtx/FitControl" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
             <p>FitControl V4 is a gym management app developed in Python with CustomTkinter.</p>
             <p>The system lets you manage members, staff, plans, payments, and attendance through a modern, intuitive interface — with built-in facial recognition.</p>
         </div>
@@ -125,6 +205,11 @@
         <div class="marquee-scrollbar-thumb"></div>
     </div>
 
+    <div class="project-text">
+        <p><strong>Problem:</strong> Small gyms struggle with manual control of members, payments, and access.</p>
+        <p><strong>Solution:</strong> A complete management system that automates members, plans, finances, and attendance control via facial recognition.</p>
+    </div>
+
 </section>
 
 <div id="lightbox" class="lightbox">
@@ -134,7 +219,7 @@
 
 <section id="contacto">
 
-    <h2>Contact</h2>
+    <h2>Contact Me</h2>
 
 <form id="formContacto"
       action="https://formsubmit.co/arthurrthr1988@gmail.com"

@@ -1,27 +1,41 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-const skills = [
+const skillsLanguages = [
     { icone: "fab fa-html5", nome: "HTML" },
     { icone: "fab fa-css3-alt", nome: "CSS" },
     { icone: "fab fa-js", nome: "JavaScript" },
     { icone: "fab fa-python", nome: "Python" },
-    { icone: "fab fa-java", nome: "Java" },
-    { icone: "fab fa-git-alt", nome: "Git" }
+    { icone: "fab fa-java", nome: "Java" }
 ];
 
-const listaSkills = document.querySelector(".skills");
+const skillsTools = [
+    { icone: "fab fa-git-alt", nome: "Git" },
+    { icone: "fab fa-github", nome: "GitHub" },
+    { icone: "fas fa-code", nome: "VS Code" },
+    { icone: "fas fa-database", nome: "SQLite" }
+];
 
-skills.forEach(skill => {
-    listaSkills.innerHTML += `
-        <span>
-            <i class="${skill.icone}"></i>
-            ${skill.nome}
-        </span>
-    `;
-});
+function renderSkills(list, target){
+    const container = document.querySelector(target);
+    list.forEach(skill => {
+        container.innerHTML += `
+            <span>
+                <i class="${skill.icone}"></i>
+                ${skill.nome}
+            </span>
+        `;
+    });
+}
+
+renderSkills(skillsLanguages, "#skillsLanguages");
+renderSkills(skillsTools, "#skillsTools");
 
 document.querySelector("#btnProjetos").addEventListener("click", () => {
     document.querySelector("#portfolio").scrollIntoView({ behavior: "smooth" });
+});
+
+document.querySelector("#btnContacto").addEventListener("click", () => {
+    document.querySelector("#contacto").scrollIntoView({ behavior: "smooth" });
 });
 
 const topo = document.querySelector("#topo");
@@ -34,7 +48,7 @@ topo.addEventListener("click", () => {
     window.scrollTo({ top:0, behavior:"smooth" });
 });
 
-const fadeElements = document.querySelectorAll("#sobre, #competencias, #portfolio, #contacto");
+const fadeElements = document.querySelectorAll("#sobre, #competencias, #resume, #portfolio, #contacto");
 
 fadeElements.forEach(el => {
     el.style.opacity = "0";
