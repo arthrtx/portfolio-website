@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Sal | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@300;400;500;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <i class="fas fa-laptop-code"></i>
+        <h2>Webbsite Portifolio</h2>
+    </div>
+
+    <nav>
+        <a href="#inicio">Home</a>
+        <a href="#sobre">About</a>
+        <a href="#competencias">Skills</a>
+        <a href="#portfolio">Recent Projects</a>
+        <a href="#contacto">Contact</a>
+    </nav>
+
+</header>
+
+<main>
+
+<section id="inicio" class="hero">
+
+    <div class="hero-texto">
+        <h1>Hello, I'm Arthur Sal</h1>
+        <div class="hero-card">
+            <h2>Information Systems & Programming Student | Aspiring Developer</h2>
+            <button id="btnProjetos">View Projects</button>
+        </div>
+    </div>
+
+</section>
+
+<div class="about-skills">
+
+<section id="sobre">
+
+    <h2>About Me</h2>
+
+    <p>
+        I'm a Software Development student focused on programming and systems analysis. I enjoy combining technology and creativity to build practical and interesting projects. I'm currently looking for opportunities where I can learn, develop my skills, and gain experience in the tech industry.
+    </p>
+
+</section>
+
+<section id="competencias">
+    <h2>Technical Skills</h2>
+    <div class="skills"></div>
+</section>
+
+</div>
+
+<section id="portfolio">
+
+    <h2>Recent Projects</h2>
+
+    <div class="project-content">
+        <div class="video-container">
+            <video autoplay muted loop playsinline>
+                <source src="assets/video/video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="project-info">
+            <h3>PinSpace Create</h3>
+            <p>Create mood boards, vision boards, and collages — Canva + Pinterest style.</p>
+            <p>A creative board editor for putting together ideas, saving visions, and sharing with the world. Choose a template, drag shapes and text, and publish your public board.</p>
+        </div>
+    </div>
+
+    <div class="marquee">
+        <div class="marquee-track">
+            <img src="assets/img/pin1.png" alt="Pin Space" class="zoom-img">
+            <img src="assets/img/pin2.png" alt="Pin Space" class="zoom-img">
+            <img src="assets/img/pin3.png" alt="Pin Space" class="zoom-img">
+            <img src="assets/img/pin1.png" alt="Pin Space" class="zoom-img">
+            <img src="assets/img/pin2.png" alt="Pin Space" class="zoom-img">
+            <img src="assets/img/pin3.png" alt="Pin Space" class="zoom-img">
+        </div>
+    </div>
+    <div class="marquee-scrollbar">
+        <div class="marquee-scrollbar-thumb"></div>
+    </div>
+
+</section>
+
+<section id="portfolio-2">
+
+    <div class="project-content">
+        <div class="video-container">
+            <video autoplay muted loop playsinline>
+                <source src="assets/video/ppv4.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="project-info">
+            <h3>FitControl</h3>
+            <p>FitControl V4 is a gym management app developed in Python with CustomTkinter.</p>
+            <p>The system lets you manage members, staff, plans, payments, and attendance through a modern, intuitive interface — with built-in facial recognition.</p>
+        </div>
+    </div>
+
+    <div class="marquee">
+        <div class="marquee-track">
+            <img src="assets/img/ppv4-1.png" alt="Project Screenshot" class="zoom-img">
+            <img src="assets/img/ppv4-2.png" alt="Project Screenshot" class="zoom-img">
+            <img src="assets/img/ppv4-3.png" alt="Project Screenshot" class="zoom-img">
+            <img src="assets/img/ppv4-4.png" alt="Project Screenshot" class="zoom-img">
+            <img src="assets/img/ppv4-5.png" alt="Project Screenshot" class="zoom-img">
+            <img src="assets/img/ppv4-6.png" alt="Project Screenshot" class="zoom-img">
+        </div>
+    </div>
+    <div class="marquee-scrollbar">
+        <div class="marquee-scrollbar-thumb"></div>
+    </div>
+
+</section>
+
+<div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Preview">
+</div>
+
+<section id="contacto">
+
+    <h2>Contact</h2>
+
+<form id="formContacto"
+      action="https://formsubmit.co/arthurrthr1988@gmail.com"
+      method="POST">
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New message from Portfolio">
+
+    <input type="text"
+           id="nome"
+           name="Name"
+           placeholder="Name"
+           required>
+
+    <input type="email"
+           id="email"
+           name="Email"
+           placeholder="Email"
+           required>
+
+    <textarea
+        id="mensagem"
+        name="Message"
+        rows="5"
+        placeholder="Message"
+        required></textarea>
+
+    <button type="submit">Send</button>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+
+    <p>© 2026 Arthur da Hora de Sal</p>
+
+    <div class="redes">
+
+        <a href="https://github.com/arthrtx" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/arthur-de-sal-01b231438/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="mailto:arthurrthr1988@gmail.com">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+    </div>
+
+</footer>
+
+<button id="topo">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
