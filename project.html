@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Arthur Sal</title>
+
+    <link rel="stylesheet" href="style.css?v=90">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter+Tight:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&family=Montserrat:wght@300;400;600;700;800;900&family=Roboto+Slab:wght@300;400&family=Urbanist:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body class="pv-body">
+
+<section class="pmodal pv-modal open pv-page" id="projModal" aria-label="Project details">
+    <div class="pv-top">
+        <span class="pv-logo">arthr.tx<small data-i18n="projects.title">Recent Projects</small></span>
+        <a class="pv-close" id="pmodalClose" href="index.html#portfolio" aria-label="Close"><span data-i18n="pv.close">Close</span><b aria-hidden="true">&times;</b></a>
+    </div>
+    <article class="pv" data-project="pinspace" style="--poster:url('assets/projects/pinspace/bg-blur.jpg?v=2')">
+        <video class="pv-bg" src="assets/projects/pinspace/demo.mp4" poster="assets/projects/pinspace/poster.jpg" muted loop playsinline preload="none"></video>
+        <div class="pv-shade" aria-hidden="true"></div>
+
+        <div class="pv-head">
+            <span class="pv-dots" aria-hidden="true"><i class="on"></i><i></i><i></i></span>
+            <span class="pv-meta"><b>#01</b> <span data-i18n="pv.web">Web App</span></span>
+            <h2 class="pv-title">PinSpace Create</h2>
+            <p class="pv-tag" data-i18n="card.pin">Mood boards &amp; collages</p>
+            <div class="pv-built"><span data-i18n="pv.built">Built with:</span><div class="lang-bar"><span style="width:48.2%;background:#e34c26"></span><span style="width:32.5%;background:#563d7c"></span><span style="width:19.3%;background:#f1e05a"></span></div><div class="lang-legend"><span><i style="background:#e34c26"></i>HTML 48.2%</span><span><i style="background:#563d7c"></i>CSS 32.5%</span><span><i style="background:#f1e05a"></i>JavaScript 19.3%</span></div></div>
+            <div class="pv-actions">
+                <button type="button" class="pv-btn pv-play" data-pv-play><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg><span data-i18n="pv.play">Play</span></button>
+                <a class="pv-btn pv-git repo-btn" href="https://github.com/arthrtx/PinSpace_Create" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+                <a class="pv-btn pv-git pv-site" href="https://glittery-gaufre-d6756f.netlify.app/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3Z"/></svg><span data-i18n="pv.site">Website</span></a>
+            </div>
+        </div>
+
+        <div class="pv-count"><i aria-hidden="true"></i><b>01/</b><sup>03</sup>
+            <div class="pv-projnav">
+                <button type="button" class="pv-pn" data-pv-prev aria-label="Previous project"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg><span data-i18n="pv.prev">Previous</span></button>
+                <button type="button" class="pv-pn" data-pv-next aria-label="Next project"><span data-i18n="pv.nextShort">Next</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+            </div>
+        </div>
+
+        <div class="pv-strip">
+            <div class="pv-strip-nav">
+                <button type="button" class="pv-arrow" data-pv-scroll="-1" aria-label="Scroll left"><svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+                <button type="button" class="pv-arrow" data-pv-scroll="1" aria-label="Scroll right"><svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+            </div>
+            <div class="pv-track" data-gallery>
+                <div class="pv-panel pv-thumb" style="background-image:url('assets/projects/pinspace/poster.jpg')">
+                    <button type="button" class="pv-thumb-play" data-pv-play aria-label="Restart video"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></svg></button>
+                    <span class="pv-thumb-label"><b>PinSpace Create:</b> <span data-i18n="pv.demo">Demo</span></span>
+                </div>
+                <div class="pv-panel pv-text">
+                    <h3 data-i18n="pv.overview">Overview:</h3>
+                    <p data-i18n="pin.p1">Create mood boards, vision boards, and collages — Canva + Pinterest style.</p>
+                    <p data-i18n="pin.p2">A creative board editor for putting together ideas, saving visions, and sharing with the world. Choose a template, drag shapes and text, and publish your public board.</p>
+                </div>
+                <div class="pv-panel pv-text">
+                    <h3 data-i18n="pv.challenge">The challenge:</h3>
+                    <p data-i18n-html="pin.problem"><strong>Problem:</strong> Creating visual boards and idea collages usually requires complex tools.</p>
+                    <p data-i18n-html="pin.solution"><strong>Solution:</strong> An intuitive Canva/Pinterest-style editor to create, save, and share mood boards and collages directly in the browser.</p>
+                </div>
+                <figure class="pv-panel pv-shot"><img src="assets/projects/pinspace/shot-01.jpg" alt="PinSpace Create — screenshot 1" class="zoom-img" loading="lazy"></figure><figure class="pv-panel pv-shot"><img src="assets/projects/pinspace/shot-02.jpg" alt="PinSpace Create — screenshot 2" class="zoom-img" loading="lazy"></figure><figure class="pv-panel pv-shot"><img src="assets/projects/pinspace/shot-03.jpg" alt="PinSpace Create — screenshot 3" class="zoom-img" loading="lazy"></figure><figure class="pv-panel pv-shot"><img src="assets/projects/pinspace/shot-04.jpg" alt="PinSpace Create — screenshot 4" class="zoom-img" loading="lazy"></figure><figure class="pv-panel pv-shot"><img src="assets/projects/pinspace/shot-05.jpg" alt="PinSpace Create — screenshot 5" class="zoom-img" loading="lazy"></figure><figure class="pv-panel pv-shot"><img src="assets/projects/pinspace/shot-06.jpg" alt="PinSpace Create — screenshot 6" class="zoom-img" loading="lazy"></figure><figure class="pv-panel pv-shot"><img src="assets/projects/pinspace/shot-07.jpg" alt="PinSpace Create — screenshot 7" class="zoom-img" loading="lazy"></figure><figure class="pv-panel pv-shot"><img src="assets/projects/pinspace/shot-08.jpg" alt="PinSpace Create — screenshot 8" class="zoom-img" loading="lazy"></figure>
+                <button type="button" class="pv-next" data-pv-next><span data-i18n="pv.next">Next project</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+            </div>
+        </div>
+    </article>
+    <article class="pv" data-project="fitcontrol" style="--poster:url('assets/projects/fitcontrol/bg-blur.jpg?v=2')">
+        <video class="pv-bg" src="assets/projects/fitcontrol/promo.mp4" poster="assets/projects/fitcontrol/poster.jpg" muted loop playsinline preload="none"></video>
+        <div class="pv-shade" aria-hidden="true"></div>
+
+        <div class="pv-head">
+            <span class="pv-dots" aria-hidden="true"><i class="on"></i><i></i><i></i></span>
+            <span class="pv-meta"><b>#02</b> <span data-i18n="pv.desk">Desktop App</span></span>
+            <h2 class="pv-title">FitControl</h2>
+            <p class="pv-tag" data-i18n="card.fit">Gym management app</p>
+            <div class="pv-built"><span data-i18n="pv.built">Built with:</span><div class="lang-bar"><span style="width:99.9%;background:#3572A5"></span><span style="width:0.1%;background:#c1f12e"></span></div><div class="lang-legend"><span><i style="background:#3572A5"></i>Python 99.9%</span><span><i style="background:#c1f12e"></i>Batchfile 0.1%</span></div></div>
+            <div class="pv-actions">
+                <button type="button" class="pv-btn pv-play" data-pv-play><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg><span data-i18n="pv.play">Play</span></button>
+                <a class="pv-btn pv-git repo-btn" href="https://github.com/arthrtx/FitControl" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+            </div>
+        </div>
+
+        <div class="pv-count"><i aria-hidden="true"></i><b>02/</b><sup>03</sup>
+            <div class="pv-projnav">
+                <button type="button" class="pv-pn" data-pv-prev aria-label="Previous project"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg><span data-i18n="pv.prev">Previous</span></button>
+                <button type="button" class="pv-pn" data-pv-next aria-label="Next project"><span data-i18n="pv.nextShort">Next</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+            </div>
+        </div>
+
+        <div class="pv-strip">
+            <div class="pv-strip-nav">
+                <button type="button" class="pv-arrow" data-pv-scroll="-1" aria-label="Scroll left"><svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+                <button type="button" class="pv-arrow" data-pv-scroll="1" aria-label="Scroll right"><svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+            </div>
+            <div class="pv-track" data-gallery>
+                <div class="pv-panel pv-thumb" style="background-image:url('assets/projects/fitcontrol/poster.jpg')">
+                    <button type="button" class="pv-thumb-play" data-pv-play aria-label="Restart video"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></svg></button>
+                    <span class="pv-thumb-label"><b>FitControl:</b> <span data-i18n="pv.demo">Demo</span></span>
+                </div>
+                <div class="pv-panel pv-text">
+                    <h3 data-i18n="pv.overview">Overview:</h3>
+                    <p data-i18n="fit.p1">FitControl V4 is a gym management app developed in Python with CustomTkinter.</p>
+                    <p data-i18n="fit.p2">The system lets you manage members, staff, plans, payments, and attendance through a modern, intuitive interface — with built-in facial recognition.</p>
+                </div>
+                <div class="pv-panel pv-text">
+                    <h3 data-i18n="pv.challenge">The challenge:</h3>
+                    <p data-i18n-html="fit.problem"><strong>Problem:</strong> Small gyms struggle with manual control of members, payments, and access.</p>
+                    <p data-i18n-html="fit.solution"><strong>Solution:</strong> A complete management system that automates members, plans, finances, and attendance control via facial recognition.</p>
+                </div>
+                <figure class="pv-panel pv-shot"><img src="assets/projects/fitcontrol/shot-01.jpg" alt="FitControl — screenshot 1" class="zoom-img" loading="lazy"></figure><figure class="pv-panel pv-shot"><img src="assets/projects/fitcontrol/shot-02.jpg" alt="FitControl — screenshot 2" class="zoom-img" loading="lazy"></figure><figure class="pv-panel pv-shot"><img src="assets/projects/fitcontrol/shot-03.jpg" alt="FitControl — screenshot 3" class="zoom-img" loading="lazy"></figure><figure class="pv-panel pv-shot"><img src="assets/projects/fitcontrol/shot-04.jpg" alt="FitControl — screenshot 4" class="zoom-img" loading="lazy"></figure><figure class="pv-panel pv-shot"><img src="assets/projects/fitcontrol/shot-05.jpg" alt="FitControl — screenshot 5" class="zoom-img" loading="lazy"></figure><figure class="pv-panel pv-shot"><img src="assets/projects/fitcontrol/shot-06.jpg" alt="FitControl — screenshot 6" class="zoom-img" loading="lazy"></figure>
+                <button type="button" class="pv-next" data-pv-next><span data-i18n="pv.next">Next project</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+            </div>
+        </div>
+    </article>
+    <article class="pv pv-phone" data-project="gamecollection" style="--poster:url('assets/projects/gamecollection/bg-blur.jpg?v=2')">
+        <video class="pv-bg" src="assets/projects/gamecollection/promo.mp4" poster="assets/projects/gamecollection/poster.jpg" muted loop playsinline preload="none"></video>
+        <div class="pv-shade" aria-hidden="true"></div>
+
+        <div class="pv-head">
+            <span class="pv-dots" aria-hidden="true"><i class="on"></i><i></i><i></i></span>
+            <span class="pv-meta"><b>#03</b> <span data-i18n="pv.android">Android App</span></span>
+            <h2 class="pv-title">Game Collection</h2>
+            <p class="pv-tag" data-i18n="card.gc">Android game collection app</p>
+            <div class="pv-built"><span data-i18n="pv.built">Built with:</span><div class="lang-bar"><span style="width:100%;background:#A97BFF"></span></div><div class="lang-legend"><span><i style="background:#A97BFF"></i>Kotlin 100%</span></div></div>
+            <div class="pv-actions">
+                <button type="button" class="pv-btn pv-play" data-pv-play><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg><span data-i18n="pv.play">Play</span></button>
+                <a class="pv-btn pv-git repo-btn" href="https://github.com/arthrtx/GameCollection" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+            </div>
+        </div>
+
+        <div class="pv-count"><i aria-hidden="true"></i><b>03/</b><sup>03</sup>
+            <div class="pv-projnav">
+                <button type="button" class="pv-pn" data-pv-prev aria-label="Previous project"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg><span data-i18n="pv.prev">Previous</span></button>
+                <button type="button" class="pv-pn" data-pv-next aria-label="Next project"><span data-i18n="pv.nextShort">Next</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+            </div>
+        </div>
+
+        <div class="pv-strip">
+            <div class="pv-strip-nav">
+                <button type="button" class="pv-arrow" data-pv-scroll="-1" aria-label="Scroll left"><svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+                <button type="button" class="pv-arrow" data-pv-scroll="1" aria-label="Scroll right"><svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+            </div>
+            <div class="pv-track" data-gallery>
+                <div class="pv-panel pv-thumb" style="background-image:url('assets/projects/gamecollection/poster.jpg')">
+                    <button type="button" class="pv-thumb-play" data-pv-play aria-label="Restart video"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></svg></button>
+                    <span class="pv-thumb-label"><b>Game Collection:</b> <span data-i18n="pv.demo">Demo</span></span>
+                </div>
+                <div class="pv-panel pv-text">
+                    <h3 data-i18n="pv.overview">Overview:</h3>
+                    <p data-i18n="gc.p1">Game Collection is an Android app to save and organize your video game collection, built as a study project in Kotlin and Jetpack Compose (Material 3).</p>
+                    <p data-i18n="gc.p2">Add games with cover, platform, genre and year, mark them as To Play, Playing or Completed, search by name, keep favourites and switch between light and dark mode — everything stays saved on the phone.</p>
+                </div>
+                <div class="pv-panel pv-text">
+                    <h3 data-i18n="pv.challenge">The challenge:</h3>
+                    <p data-i18n-html="gc.problem"><strong>Problem:</strong> Keeping track of a game collection across different consoles usually ends up in scattered notes and lists.</p>
+                    <p data-i18n-html="gc.solution"><strong>Solution:</strong> A simple offline Android app that keeps every game in one place, with covers, status, search and favourites.</p>
+                </div>
+                <figure class="pv-panel pv-shot"><img src="assets/projects/gamecollection/shot-01.webp" alt="Game Collection — screenshot 1" class="zoom-img" loading="lazy"></figure><figure class="pv-panel pv-shot"><img src="assets/projects/gamecollection/shot-02.webp" alt="Game Collection — screenshot 2" class="zoom-img" loading="lazy"></figure><figure class="pv-panel pv-shot"><img src="assets/projects/gamecollection/shot-03.webp" alt="Game Collection — screenshot 3" class="zoom-img" loading="lazy"></figure><figure class="pv-panel pv-shot"><img src="assets/projects/gamecollection/shot-04.webp" alt="Game Collection — screenshot 4" class="zoom-img" loading="lazy"></figure><figure class="pv-panel pv-shot"><img src="assets/projects/gamecollection/shot-05.webp" alt="Game Collection — screenshot 5" class="zoom-img" loading="lazy"></figure><figure class="pv-panel pv-shot"><img src="assets/projects/gamecollection/shot-06.webp" alt="Game Collection — screenshot 6" class="zoom-img" loading="lazy"></figure>
+                <button type="button" class="pv-next" data-pv-next><span data-i18n="pv.next">Next project</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+            </div>
+        </div>
+    </article>
+</section>
+
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+    <span class="lightbox-close" aria-hidden="true">&times;</span>
+    <button type="button" class="lb-nav lb-prev" id="lbPrev" aria-label="Previous image">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+    </button>
+    <img id="lightbox-img" src="" alt="Preview">
+    <button type="button" class="lb-nav lb-next" id="lbNext" aria-label="Next image">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+    </button>
+    <span class="lb-count" id="lbCount"></span>
+</div>
+
+<script src="project.js?v=90"></script>
+</body>
+</html>

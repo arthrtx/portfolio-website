@@ -6,221 +6,232 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arthur Sal | Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=90">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@300;400;500;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter+Tight:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&family=Montserrat:wght@300;400;600;700;800;900&family=Roboto+Slab:wght@300;400&family=Urbanist:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
+<button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="sideNav">
+    <span></span><span></span><span></span>
+</button>
 
-    <div class="logo">
-        <i class="fas fa-laptop-code"></i>
-        <h2>Website Portfolio</h2>
+<nav class="side-nav" id="sideNav" aria-label="Main menu">
+    <div class="side-pill">
+        <a class="side-item" href="#inicio" data-target="inicio">
+            <span class="side-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20h5v-6h4v6h5V9.5"/></svg></span>
+            <span class="side-label" data-i18n="nav.home">Home</span>
+        </a>
+        <a class="side-item" href="#sobre" data-target="" data-open-panel>
+            <span class="side-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span>
+            <span class="side-label" data-i18n="nav.about">About</span>
+        </a>
+        <a class="side-item" href="#portfolio" data-target="portfolio">
+            <span class="side-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5H9l2 2.5h8.5A1.5 1.5 0 0 1 21 9v9.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5z"/></svg></span>
+            <span class="side-label" data-i18n="nav.projects">Projects</span>
+        </a>
     </div>
-
-    <nav>
-        <a href="#inicio">Home</a>
-        <a href="#sobre">About</a>
-        <a href="#competencias">Skills</a>
-        <a href="#portfolio">Recent Projects</a>
-        <a href="#contacto">Contact</a>
-    </nav>
-
-</header>
+    <a class="side-round side-item" href="#contacto" data-target="" data-open-contact aria-label="Contact">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>
+    </a>
+</nav>
 
 <main>
 
-<section id="inicio" class="hero">
+<section id="inicio" class="hero kh">
 
-    <div class="hero-texto">
-        <h1>Hello, I'm Arthur Sal</h1>
-        <div class="hero-card">
-            <h2>Information Systems & Programming Student | Aspiring Developer</h2>
-            <div class="hero-btns">
-                <button id="btnProjetos">View Projects</button>
-                <button id="btnContacto">Contact Me</button>
-                <a class="hero-btn" href="assets/Arthur-Sal-CV.pdf" target="_blank">Download CV</a>
+    <div class="kh-screens" aria-hidden="true">
+        <div class="kh-plane">
+            <div class="kh-row" style="--d:70s"><div class="kh-track"><img src="assets/hero/b01.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b02.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b03.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b04.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b05.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b06.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b07.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b08.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b09.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b01.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b02.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b03.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b04.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b05.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b06.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b07.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b08.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b09.jpg?v=90" alt="" loading="eager" decoding="async"></div></div>
+            <div class="kh-row" style="--d:79s"><div class="kh-track"><img src="assets/hero/b04.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b05.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b06.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b07.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b08.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b09.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b10.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b11.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b12.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b04.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b05.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b06.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b07.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b08.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b09.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b10.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b11.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b12.jpg?v=90" alt="" loading="eager" decoding="async"></div></div>
+            <div class="kh-row" style="--d:88s"><div class="kh-track"><img src="assets/hero/b07.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b08.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b09.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b10.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b11.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b12.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b13.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b14.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b15.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b07.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b08.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b09.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b10.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b11.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b12.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b13.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b14.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b15.jpg?v=90" alt="" loading="eager" decoding="async"></div></div>
+            <div class="kh-row" style="--d:97s"><div class="kh-track"><img src="assets/hero/b10.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b11.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b12.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b13.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b14.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b15.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b16.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b17.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b01.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b10.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b11.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b12.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b13.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b14.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b15.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b16.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b17.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b01.jpg?v=90" alt="" loading="eager" decoding="async"></div></div>
+            <div class="kh-row" style="--d:106s"><div class="kh-track"><img src="assets/hero/b13.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b14.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b15.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b16.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b17.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b01.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b02.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b03.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b04.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b13.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b14.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b15.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b16.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b17.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b01.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b02.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b03.jpg?v=90" alt="" loading="eager" decoding="async"><img src="assets/hero/b04.jpg?v=90" alt="" loading="eager" decoding="async"></div></div>
+        </div>
+    </div>
+    <div class="kh-veil" aria-hidden="true"></div>
+
+    <span class="kh-pull-hint" aria-hidden="true" data-i18n="kh.pull">Pull to know more about me</span>
+    <button class="kh-pull" id="aboutPull" type="button" aria-label="Open about me" aria-controls="aboutPaper" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path class="c1" d="m7 7 5 5 5-5"/><path class="c2" d="m7 12 5 5 5-5"/></svg>
+    </button>
+    <button class="lang-btn kh-lang" id="langBtn" type="button" aria-label="Mudar para português"><b class="lang-pill" aria-hidden="true"></b><span data-l="pt">PT</span><span data-l="en">EN</span></button>
+
+    <div class="kh-meta" aria-hidden="true">
+        <div class="km-row km-1"><span>ARTHR.TX</span><span>©2026</span></div>
+        <div class="km-small km-s1" data-i18n-html="km.s1">Software developer<br>web · apps · systems</div>
+        <div class="km-row km-2"><span>PT</span><span class="km-small">github.com/arthrtx<br>@arthrtx</span><span>+351</span></div>
+        <div class="km-row km-3"><span>BARCELOS</span></div>
+        <div class="km-row km-4"><span>PORTUGAL</span><span class="km-badge"><i data-i18n="km.b1">Open</i><b>→</b><i data-i18n="km.b2">To work</i></span></div>
+    </div>
+
+    <div class="kh-poster" aria-hidden="true">
+        <div class="kp-title"><span><b data-i18n="kp.t1">CREATE</b> <i class="kp-dot"></i> &amp;</span><span data-i18n="kp.t2">STAY REAL</span></div>
+        <div class="kp-row kp-dates"><span>VOL. /1</span><span data-i18n="kp.code">CODE</span><span>—</span><span data-i18n="kp.music">MUSIC</span></div>
+        <div class="kp-grid">
+            <div class="kp-dots"><i></i><i></i></div>
+            <div class="kp-item kp-i1"><b>(01)</b><span data-i18n-html="kp.1">Make things that<br>sound like you</span></div>
+            <div class="kp-tag">(R.1)</div>
+            <div class="kp-item kp-i2"><b>(02)</b><span data-i18n-html="kp.2">Every idea starts<br>as a beat</span></div>
+            <div class="kp-dots kp-dots-r"><i></i><i></i></div>
+        </div>
+        <div class="kp-row kp-foot"><span>©26</span><span data-i18n="kp.3">Original only</span><span>PT</span></div>
+    </div>
+
+    <div class="kh-center">
+        <span class="kh-badge"><i></i><span data-i18n="kh.badge">Arthur Sal · Software Developer</span></span>
+        <h1 class="kh-title" aria-label="Creative Portfolio®"><span>Creative</span> <span>Portfolio<sup class="kh-reg" aria-hidden="true">®</sup></span></h1>
+        <p class="kh-sub" data-i18n="kh.sub">Websites, apps and systems — built with code and creativity.</p>
+        <a class="kh-cta" href="#portfolio"><span data-i18n="kh.cta">See projects</span> <i aria-hidden="true">↓</i></a>
+    </div>
+
+</section>
+
+<section id="portfolio" class="music proj-music">
+
+    <div class="pm-bg" aria-hidden="true"></div>
+    <div class="music-ambient" id="pmAmbient" aria-hidden="true"></div>
+
+    <div class="pm-inner">
+
+        <header class="music-head">
+            <span class="music-head-kicker" data-i18n="pm.kicker">Projects</span>
+            <h2 class="music-head-title" data-i18n="projects.title">Recent Projects</h2>
+            <p class="music-head-sub" data-i18n="pm.sub">A few things I've built. Pick a project and press ▶ to see the details.</p>
+        </header>
+
+        <div class="music-stage">
+            <button type="button" class="music-nav music-nav-prev" id="pmFlowPrev" aria-label="Previous project">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+
+            <div class="music-flow" id="pmFlow" role="listbox" aria-label="Projects" tabindex="0">
+
+                <button type="button" class="music-card" data-project="pinspace" role="option">
+                    <span class="music-card-art"><video src="assets/projects/pinspace/demo.mp4" poster="assets/projects/pinspace/poster.jpg" muted loop playsinline preload="none"></video></span>
+                    <span class="music-card-text">
+                        <strong>PinSpace Create</strong>
+                        <small data-i18n="card.pin">Mood boards &amp; collages</small>
+                    </span>
+                </button>
+
+                <button type="button" class="music-card" data-project="fitcontrol" role="option">
+                    <span class="music-card-art"><video src="assets/projects/fitcontrol/promo.mp4" poster="assets/projects/fitcontrol/poster.jpg" muted loop playsinline preload="none"></video></span>
+                    <span class="music-card-text">
+                        <strong>FitControl</strong>
+                        <small data-i18n="card.fit">Gym management app</small>
+                    </span>
+                </button>
+
+                <button type="button" class="music-card" data-project="gamecollection" role="option">
+                    <span class="music-card-art"><video src="assets/projects/gamecollection/promo.mp4" poster="assets/projects/gamecollection/poster.jpg" muted loop playsinline preload="none"></video></span>
+                    <span class="music-card-text">
+                        <strong>Game Collection</strong>
+                        <small data-i18n="card.gc">Android game collection app</small>
+                    </span>
+                </button>
+
             </div>
-        </div>
-    </div>
 
-</section>
-
-<div class="about-skills">
-
-<div class="about-col">
-
-<section id="sobre">
-
-    <h2>About Me</h2>
-
-    <p>
-        I'm a Software Development student focused on programming and systems analysis. I enjoy combining technology and creativity to build practical and interesting projects. I'm currently looking for opportunities where I can learn, develop my skills, and gain experience in the tech industry.
-    </p>
-
-</section>
-
-<section id="resume">
-
-    <h2>Resume</h2>
-
-    <div class="resume-content">
-        <div class="resume-card">
-            <p>Download my CV to get a quick overview of my background, skills, and experience.</p>
-            <a class="repo-btn" href="assets/Arthur-Sal-CV.pdf" target="_blank">
-                <i class="fas fa-download"></i> Download CV
-            </a>
+            <button type="button" class="music-nav music-nav-next" id="pmFlowNext" aria-label="Next project">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
         </div>
 
-        <div class="resume-card">
-            <p>Visit my GitHub to explore more projects and everything I've been working on.</p>
-            <a class="repo-btn" href="https://github.com/arthrtx" target="_blank">
-                <i class="fab fa-github"></i> github.com/arthrtx
-            </a>
-        </div>
-    </div>
-
-</section>
-
-</div>
-
-<section id="competencias">
-    <h2>Technical Skills</h2>
-
-    <div class="skills-group">
-        <h3>Languages</h3>
-        <div class="skills" id="skillsLanguages"></div>
-    </div>
-
-    <div class="skills-group">
-        <h3>Tools &amp; Others</h3>
-        <div class="skills" id="skillsTools"></div>
-    </div>
-</section>
-
-</div>
-
-<section id="portfolio">
-
-    <h2>Recent Projects</h2>
-
-    <div class="project-content">
-        <div class="video-col">
-            <div class="video-container">
-                <video autoplay muted loop playsinline>
-                    <source src="assets/video/video.mp4" type="video/mp4">
-                </video>
+        <div class="music-bar" id="pmBar">
+            <div class="music-bar-controls">
+                <button type="button" class="music-ctl" id="pmPrev" aria-label="Previous project">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M11 6v12L2.5 12zM21 6v12l-8.5-6z"/></svg>
+                </button>
+                <button type="button" class="music-ctl music-ctl-main" id="pmPlay" aria-label="Open project">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg>
+                </button>
+                <button type="button" class="music-ctl" id="pmNext" aria-label="Next project">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13 6v12l8.5-6zM3 6v12l8.5-6z"/></svg>
+                </button>
             </div>
-            <div class="project-languages">
-                <div class="lang-bar">
-                    <span style="width:48.2%;background:#e34c26"></span>
-                    <span style="width:32.5%;background:#563d7c"></span>
-                    <span style="width:19.3%;background:#f1e05a"></span>
-                </div>
-                <div class="lang-legend">
-                    <span><i style="background:#e34c26"></i>HTML 48.2%</span>
-                    <span><i style="background:#563d7c"></i>CSS 32.5%</span>
-                    <span><i style="background:#f1e05a"></i>JavaScript 19.3%</span>
-                </div>
-            </div>
-        </div>
-        <div class="project-info">
-            <div class="project-title-row">
-                <h3>PinSpace Create</h3>
-                <a class="repo-btn" href="https://github.com/arthrtx/PinSpace_Create" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
+
+            <div class="music-now" id="pmNow" role="button" tabindex="0" aria-label="Open project">
+                <span class="music-now-art"><img id="pmNowArt" src="assets/projects/pinspace/poster.jpg" alt=""></span>
+                <span class="music-now-text">
+                    <strong id="pmNowTitle">PinSpace Create</strong>
+                    <small id="pmNowSub">Mood boards &amp; collages</small>
+                </span>
+                <span class="music-eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                <a class="music-ctl music-ctl-sm" id="pmGit" href="https://github.com/arthrtx" target="_blank" rel="noopener" aria-label="Open on GitHub" title="GitHub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="19" cy="12" r="1.8"/></svg>
                 </a>
+                <div class="music-progress" aria-hidden="true"><i id="pmProgress"></i></div>
             </div>
-            <p>Create mood boards, vision boards, and collages — Canva + Pinterest style.</p>
-            <p>A creative board editor for putting together ideas, saving visions, and sharing with the world. Choose a template, drag shapes and text, and publish your public board.</p>
-        </div>
-    </div>
 
-    <div class="marquee">
-        <div class="marquee-track">
-            <img src="assets/img/pin1.png" alt="Pin Space" class="zoom-img">
-            <img src="assets/img/pin2.png" alt="Pin Space" class="zoom-img">
-            <img src="assets/img/pin3.png" alt="Pin Space" class="zoom-img">
-            <img src="assets/img/pin1.png" alt="Pin Space" class="zoom-img">
-            <img src="assets/img/pin2.png" alt="Pin Space" class="zoom-img">
-            <img src="assets/img/pin3.png" alt="Pin Space" class="zoom-img">
-        </div>
-    </div>
-    <div class="marquee-scrollbar">
-        <div class="marquee-scrollbar-thumb"></div>
-    </div>
+            <div class="music-bar-extra">
+                <button type="button" class="music-ctl" id="pmQueueToggle" aria-label="Track list" aria-expanded="false">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+                </button>
+                <div class="music-volume">
+                    <button type="button" class="music-ctl" id="pmMute" aria-label="Mute">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4z" fill="currentColor"/><path class="i-wave" d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+                    </button>
+                    <input type="range" id="pmVolume" min="0" max="100" value="70" aria-label="Volume">
+                </div>
+            </div>
 
-    <div class="project-text">
-        <p><strong>Problem:</strong> Creating visual boards and idea collages usually requires complex tools.</p>
-        <p><strong>Solution:</strong> An intuitive Canva/Pinterest-style editor to create, save, and share mood boards and collages directly in the browser.</p>
+            <div class="music-queue" id="pmQueue" hidden>
+                <ol id="pmQueueList"></ol>
+            </div>
+        </div>
+
+        <p class="music-credit" data-i18n="pm.credit2">Press ▶ to listen to music while you browse</p>
+
     </div>
 
 </section>
 
-<section id="portfolio-2">
 
-    <div class="project-content">
-        <div class="video-col">
-            <div class="video-container">
-                <video autoplay muted loop playsinline>
-                    <source src="assets/video/ppv4.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="project-languages">
-                <div class="lang-bar">
-                    <span style="width:99.9%;background:#3572A5"></span>
-                    <span style="width:0.1%;background:#c1f12e"></span>
-                </div>
-                <div class="lang-legend">
-                    <span><i style="background:#3572A5"></i>Python 99.9%</span>
-                    <span><i style="background:#c1f12e"></i>Batchfile 0.1%</span>
-                </div>
-            </div>
+
+
+</main>
+
+<footer class="outro" id="outro">
+
+    <div class="outro-band">
+        <span class="outro-the" aria-hidden="true" data-i18n="outro.the">the</span>
+        <h2 class="outro-name" aria-label="Arthur"><span class="on">Art</span>hur</h2>
+        <span class="outro-noun" data-i18n="outro.noun">noun · software developer</span>
+    </div>
+
+    <div class="outro-info">
+        <h2 class="outro-h" data-i18n-html="outro.h">Design +<br>Development</h2>
+        <p class="outro-p" data-i18n="outro.p">Software Development student who builds websites, apps and systems. Every project is a chance to do better than the last one.</p>
+    </div>
+
+    <div class="outro-bottom">
+        <div class="outro-social">
+            <span data-i18n="outro.social">Social:</span>
+            <a href="https://github.com/arthrtx" target="_blank" rel="noopener">/ GitHub</a>
+            <a href="https://www.linkedin.com/in/arthur-de-sal-01b231438/" target="_blank" rel="noopener">/ LinkedIn</a>
+            <a href="mailto:arthurrthr1988@gmail.com">/ Email</a>
         </div>
-        <div class="project-info">
-            <div class="project-title-row">
-                <h3>FitControl</h3>
-                <a class="repo-btn" href="https://github.com/arthrtx/FitControl" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-            </div>
-            <p>FitControl V4 is a gym management app developed in Python with CustomTkinter.</p>
-            <p>The system lets you manage members, staff, plans, payments, and attendance through a modern, intuitive interface — with built-in facial recognition.</p>
-        </div>
+        <button type="button" class="outro-up" id="outroUp"><span data-i18n="outro.up">Back to top</span></button>
+        <span class="outro-copy">2026 © Arthur da Hora de Sal</span>
     </div>
 
-    <div class="marquee">
-        <div class="marquee-track">
-            <img src="assets/img/ppv4-1.png" alt="Project Screenshot" class="zoom-img">
-            <img src="assets/img/ppv4-2.png" alt="Project Screenshot" class="zoom-img">
-            <img src="assets/img/ppv4-3.png" alt="Project Screenshot" class="zoom-img">
-            <img src="assets/img/ppv4-4.png" alt="Project Screenshot" class="zoom-img">
-            <img src="assets/img/ppv4-5.png" alt="Project Screenshot" class="zoom-img">
-            <img src="assets/img/ppv4-6.png" alt="Project Screenshot" class="zoom-img">
-        </div>
+</footer>
+
+<button class="contact-tab" id="contactTab" type="button" aria-controls="contactPanel" aria-expanded="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>
+    <span data-i18n="contact.tab">Contact</span>
+</button>
+
+<div class="contact-shade" id="contactShade" aria-hidden="true"></div>
+<aside class="contact-panel" id="contactPanel" role="dialog" aria-modal="true" aria-labelledby="contactTitle" aria-hidden="true">
+    <div class="cp-head">
+        <span class="cp-kicker" data-i18n="contact.kicker">Let's talk</span>
+        <button class="panel-close" id="contactClose" type="button" aria-label="Close"><span></span><span></span></button>
     </div>
-    <div class="marquee-scrollbar">
-        <div class="marquee-scrollbar-thumb"></div>
-    </div>
-
-    <div class="project-text">
-        <p><strong>Problem:</strong> Small gyms struggle with manual control of members, payments, and access.</p>
-        <p><strong>Solution:</strong> A complete management system that automates members, plans, finances, and attendance control via facial recognition.</p>
-    </div>
-
-</section>
-
-<div id="lightbox" class="lightbox">
-    <span class="lightbox-close">&times;</span>
-    <img id="lightbox-img" src="" alt="Preview">
-</div>
-
-<section id="contacto">
-
-    <h2>Contact Me</h2>
-
+    <h2 class="cp-title" id="contactTitle" data-i18n="contact.title">Contact Me</h2>
+    <p class="cp-sub" data-i18n="contact.sub">Have a project or an opportunity? Send me a message and I'll get back to you.</p>
 <form id="formContacto"
       action="https://formsubmit.co/arthurrthr1988@gmail.com"
       method="POST">
@@ -231,7 +242,7 @@
     <input type="text"
            id="nome"
            name="Name"
-           placeholder="Name"
+           placeholder="Name" data-i18n-ph="contact.name"
            required>
 
     <input type="email"
@@ -244,44 +255,118 @@
         id="mensagem"
         name="Message"
         rows="5"
-        placeholder="Message"
+        placeholder="Message" data-i18n-ph="contact.msg"
         required></textarea>
 
-    <button type="submit">Send</button>
+    <button type="submit" data-i18n="contact.send">Send</button>
 
 </form>
+    <div class="cp-links">
+        <a href="mailto:arthurrthr1988@gmail.com"><i class="fas fa-envelope"></i> arthurrthr1988@gmail.com</a>
+        <a href="https://github.com/arthrtx" target="_blank" rel="noopener"><i class="fab fa-github"></i> github.com/arthrtx</a>
+        <a href="https://www.linkedin.com/in/arthur-de-sal-01b231438/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+</aside>
 
+
+
+
+<section class="paper" id="aboutPaper" role="dialog" aria-modal="true" aria-label="About me" aria-hidden="true">
+    <div class="paper-sheet" id="paperSheet">
+        <div class="paper-scroll">
+            <div class="paper-inner ab2">
+
+                <div class="ab2-top">
+                    <button class="lang-btn kh-lang ab2-lang" id="langBtn2" type="button" aria-label="Mudar para português"><b class="lang-pill" aria-hidden="true"></b><span data-l="pt">PT</span><span data-l="en">EN</span></button>
+                    <div class="ab2-seg"><span>©26</span><b data-i18n="ab2.about">About</b><span data-i18n="ab2.archive">Archive</span></div>
+                    <button class="ab2-x" id="paperClose" type="button" aria-label="Close"><span data-i18n="pv.close">Close</span></button>
+                </div>
+
+                <div class="ab2-panel">
+                    <div class="ab2-pill"><span data-i18n="ab2.p1">Arthur's</span><span data-i18n="ab2.p2">Code</span><span data-i18n="ab2.p3">Media</span></div>
+
+                    <nav class="ab2-links">
+                        <a href="#ab2-me" data-i18n="ab2.l1">About</a>
+                        <a href="#ab2-skills" data-i18n="ab2.l2">Skills</a>
+                        <a href="#ab2-resume" data-i18n="ab2.l3">Resume</a>
+                        <a href="https://github.com/arthrtx" target="_blank" rel="noopener" data-i18n="ab2.others">Others</a>
+                        <a class="ab2-cv" href="assets/Arthur-Sal-CV.pdf" target="_blank" data-i18n="resume.cvBtn">Download CV</a>
+                    </nav>
+                    <article class="ab2-card ab2-card1" id="ab2-me">
+                        <div class="ab2-c1">
+                            <div class="ab2-c1-head">
+                                <span class="ab2-kick" data-i18n="about.title">About Me</span>
+                                <p class="ab2-note" data-i18n="w.about.sub">Software Development student</p>
+                            </div>
+                            <h2 class="ab2-name">ARTHUR SAL</h2>
+                            <p class="ab2-text" data-i18n="about.text">I'm a Software Development student focused on programming and systems analysis. I enjoy combining technology and creativity to build practical and interesting projects. I'm currently looking for opportunities where I can learn, develop my skills, and gain experience in the tech industry.</p>
+                            <span class="ab2-slant" aria-hidden="true"></span>
+                        </div>
+                    </article>
+                    <article class="ab2-card ab2-card2" id="ab2-skills">
+                        <div class="ab2-c2l">
+                            <h3 class="ab2-script"><i>a/</i><span data-i18n="ab2.skills">Skills</span></h3>
+                            <p class="ab2-note" data-i18n="ab2.skillsSub">Tools I work with every day — and keep learning.</p>
+                            <div class="ab2-box">
+                                <h4 data-i18n="skills.lang">Languages</h4>
+                                <div class="skills" id="skillsLanguages"></div>
+                                <h4 data-i18n="skills.tools">Tools &amp; Others</h4>
+                                <div class="skills" id="skillsTools"></div>
+                            </div>
+                        </div>
+                        <div class="ab2-code" aria-hidden="true">
+                            <pre><b>const</b> arthur = {
+  role: <i>"developer"</i>,
+  base: <i>"Barcelos, PT"</i>,
+  loves: [<i>"code"</i>, <i>"music"</i>],
+  status: <i>"open to work"</i>
+};
+
+<b>while</b> (alive) {
+  create();
+  listen();
+  repeat();
+}</pre>
+                        </div>
+                    </article>
+                    <svg class="ab2-chev" viewBox="0 0 860 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 18h46l16 22H16Z"/><path d="M80 18h320l-14 22H96Z"/><path d="M290 22h22l-8 14h-22ZM320 22h22l-8 14h-22ZM350 22h22l-8 14h-22Z"/><path d="M420 40 446 0h70l26 40h-28l-14-22h-28l-14 22Z"/><path d="M560 0h260v40H530Z"/><path d="M604 8h22l-8 16h-22ZM636 8h22l-8 16h-22ZM668 8h22l-8 16h-22ZM700 8h22l-8 16h-22Z" fill="#fff"/></svg>
+                    <div class="ab2-resume" id="ab2-resume">
+                        <h3 data-i18n="resume.title">Resume</h3>
+                        <p data-i18n="resume.cv">Download my CV to get a quick overview of my background, skills, and experience.</p>
+                        <p data-i18n="resume.gh">Visit my GitHub to explore more projects and everything I've been working on.</p>
+                        <div class="ab2-bar">
+                            <a href="assets/Arthur-Sal-CV.pdf" target="_blank" data-i18n="resume.cvBtn">Download CV</a>
+                            <a href="https://github.com/arthrtx" target="_blank" rel="noopener">github.com/arthrtx</a>
+                        </div>
+                        <a class="ab2-arrow" href="https://github.com/arthrtx" target="_blank" rel="noopener" aria-label="GitHub">→</a>
+                    </div>
+
+                    <div class="ab2-foot"><span class="on" data-i18n="ab2.f1">Study</span><span data-i18n="ab2.f2">Build</span><span data-i18n="ab2.f3">Repeat</span></div>
+                </div>
+
+                <div class="ab2-bottom">
+                    <span>OFF / ON</span><span class="ab2-online">ONLINE</span>
+                    <button type="button" class="ab2-up" id="ab2Up"><span data-i18n="outro.up">Back to top</span><b aria-hidden="true">↑</b></button>
+                </div>
+            </div>
+        </div>
+        <button class="paper-pull" id="paperPull" type="button" aria-label="Close about me">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 17 5-5 5 5"/><path d="m7 12 5-5 5 5"/></svg>
+        </button>
+    </div>
 </section>
 
-</main>
+<div class="mini-player" id="miniPlayer" aria-label="Music player">
+    <span class="mp-disc" aria-hidden="true"><i></i></span>
+    <span class="mp-txt"><b id="mpTrack">Sunset Drive</b><small>arthr.tx · house</small></span>
+    <button type="button" class="mp-btn" id="mpPlay" aria-label="Play / pause"><svg class="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z"/></svg><svg class="i-pause" viewBox="0 0 24 24"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg></button>
+    <button type="button" class="mp-btn" id="mpNext" aria-label="Next track"><svg viewBox="0 0 24 24"><path d="M13 6v12l8.5-6zM3 6v12l8.5-6z"/></svg></button>
+</div>
 
-<footer>
+<div class="proj-frame" id="projFrame" hidden></div>
 
-    <p>© 2026 Arthur da Hora de Sal</p>
-
-    <div class="redes">
-
-        <a href="https://github.com/arthrtx" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
-
-        <a href="https://www.linkedin.com/in/arthur-de-sal-01b231438/" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
-
-        <a href="mailto:arthurrthr1988@gmail.com">
-            <i class="fas fa-envelope"></i>
-        </a>
-
-    </div>
-
-</footer>
-
-<button id="topo">
-    <i class="fas fa-arrow-up"></i>
-</button>
-
-<script src="script.js"></script>
+<script src="music.js?v=90"></script>
+<script src="script.js?v=90"></script>
 
 </body>
 </html>
