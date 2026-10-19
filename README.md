@@ -6,6 +6,10 @@ Personal portfolio built with HTML, CSS and JavaScript — no frameworks, no bui
 
 A creative portfolio to showcase my projects and skills as a Software Development student, with a design inspired by music players and editorial layouts.
 
+## Live Demo
+
+[GitHub Pages](https://arthrtx.github.io/portfolio-website/)
+
 ## Projects
 
 - **PinSpace Create** — web app for mood boards and collages, Canva + Pinterest style ([live](https://glittery-gaufre-d6756f.netlify.app/) · [code](https://github.com/arthrtx/PinSpace_Create))
@@ -45,13 +49,10 @@ music.js        music player
 assets/         images, videos and CV
 ```
 
-## Live Demo
-
-[GitHub Pages](https://arthrtx.github.io/portfolio-website/)
 
 ## Author
 
-Arthur da Hora de Sal — [GitHub](https://github.com/arthrtx) · [LinkedIn](https://www.linkedin.com/in/arthur-de-sal-01b231438/)
+Arthur da Hora de Sal 
 
 ---
 
