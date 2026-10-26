@@ -121,7 +121,8 @@ if (listaCartoes) {
     const GITHUB = {
         pinspace: "https://github.com/arthrtx/PinSpace_Create",
         fitcontrol: "https://github.com/arthrtx/FitControl",
-        gamecollection: "https://github.com/arthrtx/GameCollection"
+        gamecollection: "https://github.com/arthrtx/GameCollection",
+        huroh: "https://github.com/arthrtx/HUROH"
     };
 
     const video = (cartao) => cartao.querySelector("video");
@@ -623,6 +624,7 @@ const PT = {
     "gc.problem": "<strong>Problema:</strong> Acompanhar uma coleção de jogos de várias consolas acaba normalmente em notas e listas espalhadas.",
     "gc.solution": "<strong>Solução:</strong> Uma app Android simples e offline que junta todos os jogos num só sítio, com capas, estado, pesquisa e favoritos.",
     "card.fit": "Gestão de ginásios",
+    "card.huroh": "Finanças, agenda e tarefas",
     "pin.p1": "Cria mood boards, vision boards e colagens — ao estilo Canva + Pinterest.",
     "pin.p2": "Um editor criativo de quadros para juntar ideias, guardar visões e partilhar com o mundo. Escolhe um modelo, arrasta formas e texto e publica o teu quadro.",
     "pin.problem": "<strong>Problema:</strong> Criar quadros visuais e colagens de ideias normalmente exige ferramentas complexas.",
