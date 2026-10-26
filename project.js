@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-const ORDER = ["pinspace", "fitcontrol", "gamecollection"];
+const ORDER = ["pinspace", "fitcontrol", "gamecollection", "huroh"];
 const params = new URLSearchParams(location.search);
 let id = ORDER.includes(params.get("p")) ? params.get("p") : ORDER[0];
 const modal = document.getElementById("projModal");
@@ -156,7 +156,12 @@ const PT = {
     "fit.p1": "O FitControl V4 é uma aplicação de gestão de ginásios desenvolvida em Python com CustomTkinter.",
     "fit.p2": "O sistema permite gerir sócios, funcionários, planos, pagamentos e presenças numa interface moderna e intuitiva — com reconhecimento facial integrado.",
     "fit.problem": "<strong>Problema:</strong> Os ginásios pequenos têm dificuldade em controlar manualmente sócios, pagamentos e acessos.",
-    "fit.solution": "<strong>Solução:</strong> Um sistema de gestão completo que automatiza sócios, planos, finanças e o controlo de presenças por reconhecimento facial."
+    "fit.solution": "<strong>Solução:</strong> Um sistema de gestão completo que automatiza sócios, planos, finanças e o controlo de presenças por reconhecimento facial.",
+    "card.huroh": "Finanças, agenda e tarefas",
+    "hu.p1": "A HUROH junta num só sítio o que costuma andar espalhado por várias apps: o dinheiro, os compromissos e as tarefas do dia a dia — a tua vida, sincronizada.",
+    "hu.p2": "Uma app para Windows feita com Electron e Supabase, com entrada pelo Google. Funciona sem internet, sincroniza entre dispositivos em tempo real e tem menu lateral no ambiente de trabalho, tema claro e escuro, e português, inglês e espanhol.",
+    "hu.problem": "<strong>Problema:</strong> Despesas, compromissos e tarefas acabam espalhados por apps diferentes e é difícil ver tudo de relance.",
+    "hu.solution": "<strong>Solução:</strong> Um dashboard rápido que mostra quanto gastaste este mês, o que tens marcado para hoje e o que falta fazer — mesmo sem internet."
 };
 let lang = "en";
 try{ lang = localStorage.getItem("lang") || "en"; }catch(e){}
